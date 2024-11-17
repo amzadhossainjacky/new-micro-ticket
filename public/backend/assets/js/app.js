@@ -1,7 +1,7 @@
 $(function () {
 	"use strict";
 	/* perfect scrol bar */
-	new PerfectScrollbar(".scroll-menu");
+	//new PerfectScrollbar(".scroll-menu");
 	// new PerfectScrollbar(".app-container");
 	// new PerfectScrollbar('.header-message-list');
 	new PerfectScrollbar('.header-notifications-list');
