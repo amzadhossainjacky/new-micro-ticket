@@ -47,8 +47,7 @@ class LoginController extends Controller
         try {
             ## Attempt to login
             if (Auth::attemptWhen(['email' => $request->email, 'password' => $request->password])) {
-                //$user = User::with(['roles'])->find(auth()->id());
-                $user = User::find(auth()->id());
+                $user = User::with(['roles'])->find(auth()->id());
 
                 $session_inputs = [
                     'user_full_name' => $user->name,
